@@ -24,18 +24,17 @@ This repo is meant to:
 sql-problem-solutions/
 │
 ├── leetcode/
-│ ├── easy/
-│ ├── medium/
-│ └── hard/
+│ ├── easy/ # Beginner-level problems
+│ ├── medium/ # Intermediate problems
+│ └── hard/ # Advanced problems
 │
-├── hackerrank/
+├── hackerrank/ # SQL problems from HackerRank
 │
-├── datalemur/
+├── datalemur/ # Interview-style questions from DataLemur
 │
-├── stratascratch/
+├── stratascratch/ # Real-world datasets from StrataScratch
 │
-└── README.md
-
+└── README.md # Project documentation
 
 ---
 
