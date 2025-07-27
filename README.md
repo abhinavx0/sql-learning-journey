@@ -19,25 +19,6 @@ This repo is meant to:
 
 ---
 
-## 📁 Folder Structure
-
-sql-problem-solutions/
-│
-├── leetcode/
-│ ├── easy/ # Beginner-level problems
-│ ├── medium/ # Intermediate problems
-│ └── hard/ # Advanced problems
-│
-├── hackerrank/ # SQL problems from HackerRank
-│
-├── datalemur/ # Interview-style questions from DataLemur
-│
-├── stratascratch/ # Real-world datasets from StrataScratch
-│
-└── README.md # Project documentation
-
----
-
 ## 🧩 Topics Covered
 
 - SELECT, WHERE, GROUP BY, HAVING
