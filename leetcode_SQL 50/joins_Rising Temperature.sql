@@ -1,4 +1,4 @@
-
+/*
 Table: Weather
 +---------------+---------+
 | Column Name   | Type    |
@@ -36,3 +36,25 @@ Output:
 Explanation: 
 In 2015-01-02, the temperature was higher than the previous day (10 -> 25).
 In 2015-01-04, the temperature was higher than the previous day (20 -> 30).
+*/
+-- solution_1.
+SELECT w2.id
+FROM Weather w1
+JOIN Weather w2
+  ON DATEDIFF(w2.recordDate, w1.recordDate) = 1
+WHERE w2.temperature > w1.temperature;
+
+-- solution_2.
+SELECT id
+FROM (
+    SELECT
+        id,
+        recordDate,
+        temperature,
+        LAG(temperature) OVER (ORDER BY recordDate) AS prev_temp,
+        LAG(recordDate) OVER (ORDER BY recordDate) AS prev_date
+    FROM Weather
+) t
+WHERE DATEDIFF(recordDate, prev_date) = 1
+  AND temperature > prev_temp;
+
